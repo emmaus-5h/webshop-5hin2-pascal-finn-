@@ -1,5 +1,6 @@
 { pkgs }: {
     deps = [
+        pkgs.sudo
         pkgs.sqlite.bin
         pkgs.nodejs
         pkgs.yarn

@@ -1,5 +1,9 @@
 /* all pages */
 
+#index{
+  background-color: #fef8c9;
+}
+
 footer {
   margin: 20px;
   font-size: 12px;
