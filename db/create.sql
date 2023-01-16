@@ -10,6 +10,25 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+CREATE TABLE platform (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  naam_platform TEXT
+);
+
+CREATE TABLE genre (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  naam_genre TEXT
+);
+
+CREATE TABLE fysiek_digitaal (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  fysiek_digitaal TEXT
+);
+
+CREATE TABLE leeftijd_categorie (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  leeftijd_categorie TEXT
+);
 
 --
 -- populate with data
