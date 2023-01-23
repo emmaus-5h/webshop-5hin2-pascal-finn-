@@ -22,16 +22,19 @@ CREATE TABLE platform (
 
 CREATE TABLE genre (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name_game VARCHAR(255),
   naam_genre VARCHAR(255)
 );
 
 CREATE TABLE fysiek_digitaal (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name_game VARCHAR(255),
   fysiek_digitaal VARCHAR(255)
 );
 
 CREATE TABLE leeftijd_categorie (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name_game VARCHAR(255),
   leeftijd_categorie VARCHAR(255)
 );
 
@@ -63,3 +66,11 @@ insert into products (name, description, code, price) values ('Doom Eternal', 'd
 --
 insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Fortnite: Save the world', TRUE, TRUE, TRUE, TRUE, TRUE);
 insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Minecraft', TRUE, TRUE, TRUE, FALSE, FALSE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Call of Duty: Modern Warfare', TRUE, FALSE, FALSE, TRUE, TRUE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Factorio', TRUE, TRUE, TRUE, FALSE, FALSE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('For Honor', TRUE, FALSE, FALSE, TRUE, TRUE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Dishonored', TRUE, FALSE, FALSE, FALSE, FALSE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Hollow Knight', TRUE, TRUE, TRUE, TRUE, TRUE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Ori and The Blind Forest', TRUE, FALSE, TRUE, TRUE, TRUE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Dirt Rally', TRUE, FALSE, FALSE, TRUE, TRUE);
+insert into platform (name_game, Windows, Linux, MacOS, PS4, XBOX) values ('Doom Eternal', TRUE, FALSE, FALSE, TRUE, TRUE);
