@@ -12,7 +12,11 @@ CREATE TABLE products (
 
 CREATE TABLE platform (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  naam_platform TEXT
+  Windows boolean,
+  Linux boolean,
+  MacOS boolean,
+  PS4 boolean,
+  XBOX boolean
 );
 
 CREATE TABLE genre (
