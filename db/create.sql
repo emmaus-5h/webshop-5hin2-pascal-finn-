@@ -64,13 +64,13 @@ insert into products (name, description, code, price) values ('Doom Eternal', 'd
 --
 -- table platform
 --
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Fortnite: Save the world', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Minecraft', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'FALSE', 'FALSE');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Call of Duty: Modern Warfare', 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Factorio', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'FALSE', 'FALSE');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('For Honor', 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Dishonored', 'TRUE, ... users', 'FALSE', 'FALSE', 'FALSE', 'FALSE');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Hollow Knight', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Ori and The Blind Forest', 'TRUE, ... users', 'FALSE', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Dirt Rally', 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values ('Doom Eternal', 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (1, 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (2, 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'FALSE', 'FALSE');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (3, 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (4, 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'FALSE', 'FALSE');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (5, 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (6, 'TRUE, ... users', 'FALSE', 'FALSE', 'FALSE', 'FALSE');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (7, 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (8, 'TRUE, ... users', 'FALSE', 'TRUE, ... users', 'TRUE, ... users', 'TRUE, ... users');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (9, 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
+insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (10, 'TRUE, ... users', 'FALSE', 'FALSE', 'TRUE, ... users', 'TRUE, ... users');
