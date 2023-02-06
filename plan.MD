@@ -15,7 +15,7 @@ Games:
   Fortnite: Save the World
     €20,
     Windows, PS4, XBOX,
-    Base Defense,
+    Base Building, FPS
     Digitaal,
     12
   Minecraft: Java Edition
@@ -39,7 +39,7 @@ Games:
   For Honor
     €30,
     Windows, PS4, XBOX,
-    3D Fighting,
+    Fighting,
     Digitaal, Fysiek,
     16
   Dishonored
