@@ -12,7 +12,6 @@ CREATE TABLE products (
 
 CREATE TABLE platform (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  game_id INTEGER,
   Windows VARCHAR(255),
   Linux VARCHAR(255),
   MacOS VARCHAR(255),
@@ -22,20 +21,17 @@ CREATE TABLE platform (
 
 CREATE TABLE genre (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  game_id INTEGER,
   naam_genre VARCHAR(255)
 );
 
 CREATE TABLE fysiek_digitaal (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  game_id INTEGER,
   fysiek boolean,
   digitaal boolean
 );
 
 CREATE TABLE leeftijd_categorie (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  game_id INTEGER,
   leeftijd_categorie VARCHAR(255)
 );
 
@@ -65,57 +61,57 @@ insert into products (name, description, code, price) values ('Doom Eternal', 'D
 --
 -- table platform
 --
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (1, 'Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, ... users', 'XBOX, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (2, 'Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, FALSE', 'XBOX, FALSE');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (3, 'Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (4, 'Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, FALSE', 'XBOX, FALSE');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (5, 'Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (6, 'Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, FALSE', 'XBOX, FALSE');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (7, 'Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, ... users', 'XBOX, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (8, 'Windows, ... users', 'Linux, FALSE', 'MacOS, ... users', 'PS4, ... users', 'XBOX, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (9, 'Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
-insert into platform (game_id, Windows, Linux, MacOS, PS4, XBOX) values (10, 'Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, ... users', 'XBOX, ... users');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, FALSE', 'XBOX, FALSE');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, FALSE', 'XBOX, FALSE');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, FALSE', 'XBOX, FALSE');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, ... users', 'MacOS, ... users', 'PS4, ... users', 'XBOX, ... users');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, FALSE', 'MacOS, ... users', 'PS4, ... users', 'XBOX, ... users');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
+insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... users', 'Linux, FALSE', 'MacOS, FALSE', 'PS4, ... users', 'XBOX, ... users');
 
 --
 -- table genre
 --
-insert into genre (game_id, naam_genre) values (1, "Base Building");
-insert into genre (game_id, naam_genre) values (2, "Sandbox");
-insert into genre (game_id, naam_genre) values (3, "FPS");
-insert into genre (game_id, naam_genre) values (4, "Base Building");
-insert into genre (game_id, naam_genre) values (5, "Fighting");
-insert into genre (game_id, naam_genre) values (6, "Action");
-insert into genre (game_id, naam_genre) values (7, "Action");
-insert into genre (game_id, naam_genre) values (8, "Action");
-insert into genre (game_id, naam_genre) values (9, "Racing");
-insert into genre (game_id, naam_genre) values (10, "FPS");
+insert into genre (naam_genre) values ("Base Building");
+insert into genre (naam_genre) values ("Sandbox");
+insert into genre (naam_genre) values ("FPS");
+insert into genre (naam_genre) values ("Base Building");
+insert into genre (naam_genre) values ("Fighting");
+insert into genre (naam_genre) values ("Action");
+insert into genre (naam_genre) values ("Action");
+insert into genre (naam_genre) values ("Action");
+insert into genre (naam_genre) values ("Racing");
+insert into genre (naam_genre) values ("FPS");
 
 --
 -- table fysiek digitaal
 --
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (1, false, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (2, false, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (3, true, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (4, false, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (5, true, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (6, false, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (7, false, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (8, false, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (9, true, true);
-insert into fysiek_digitaal (game_id, fysiek, digitaal) values (10, true, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (false, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (false, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (true, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (false, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (true, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (false, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (false, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (false, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (true, true);
+insert into fysiek_digitaal (fysiek, digitaal) values (true, true);
 
 --
 -- table leeftijd categorie
 --
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (1, "12");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (2, "7");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (3, "18");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (4, "12");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (5, "16");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (6, "18");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (7, "16");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (8, "12");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (9, "7");
-insert into leeftijd_categorie (game_id, leeftijd_categorie) values (10, "18");
+insert into leeftijd_categorie (leeftijd_categorie) values ("12");
+insert into leeftijd_categorie (leeftijd_categorie) values ("7");
+insert into leeftijd_categorie (leeftijd_categorie) values ("18");
+insert into leeftijd_categorie (leeftijd_categorie) values ("12");
+insert into leeftijd_categorie (leeftijd_categorie) values ("16");
+insert into leeftijd_categorie (leeftijd_categorie) values ("18");
+insert into leeftijd_categorie (leeftijd_categorie) values ("16");
+insert into leeftijd_categorie (leeftijd_categorie) values ("12");
+insert into leeftijd_categorie (leeftijd_categorie) values ("7");
+insert into leeftijd_categorie (leeftijd_categorie) values ("18");
 
 
