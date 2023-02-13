@@ -117,3 +117,9 @@ insert into leeftijd_categorie (game_id, leeftijd_categorie) values (7, "16");
 insert into leeftijd_categorie (game_id, leeftijd_categorie) values (8, "12");
 insert into leeftijd_categorie (game_id, leeftijd_categorie) values (9, "7");
 insert into leeftijd_categorie (game_id, leeftijd_categorie) values (10, "18");
+
+
+--
+-- tables samenvoegen
+--
+

@@ -10,6 +10,8 @@ Games verkopen
   -Fysiek/Digitaal
   -Leeftijd
     -18, 16, 12, 7, 3
+  -waarschuwingen
+    -bijv: geweld, vulgair taalgebruik, beangstigende inhoud, Seksuele inhoud, Drugs, Gokspelsimulaties, Discriminatie, in game aankopen
 
 Games:
   Fortnite: Save the World
@@ -18,6 +20,7 @@ Games:
     Base Building, FPS
     Digitaal,
     12
+    geweld, in game aankopen
   Minecraft: Java Edition
     €30,
     Windows, Linux, MacOS,
@@ -30,6 +33,7 @@ Games:
     FPS,
     Digitaal, Fysiek,
     18
+    geweld, 
   Factorio
     €30,
     Windows, Linux, MacOS,
