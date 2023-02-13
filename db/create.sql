@@ -32,7 +32,8 @@ CREATE TABLE fysiek_digitaal (
 
 CREATE TABLE leeftijd_categorie (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  leeftijd_categorie VARCHAR(255)
+  leeftijd_categorie VARCHAR(255),
+  waarschuwing VARCHAR(255)
 );
 
 --
@@ -103,15 +104,15 @@ insert into fysiek_digitaal (fysiek, digitaal) values (true, true);
 --
 -- table leeftijd categorie
 --
-insert into leeftijd_categorie (leeftijd_categorie) values ("12");
-insert into leeftijd_categorie (leeftijd_categorie) values ("7");
-insert into leeftijd_categorie (leeftijd_categorie) values ("18");
-insert into leeftijd_categorie (leeftijd_categorie) values ("12");
-insert into leeftijd_categorie (leeftijd_categorie) values ("16");
-insert into leeftijd_categorie (leeftijd_categorie) values ("18");
-insert into leeftijd_categorie (leeftijd_categorie) values ("16");
-insert into leeftijd_categorie (leeftijd_categorie) values ("12");
-insert into leeftijd_categorie (leeftijd_categorie) values ("7");
-insert into leeftijd_categorie (leeftijd_categorie) values ("18");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("12", "geweld, in game aankopen");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("7", "-");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("18", "geweld");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("12", "geweld");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("16", "geweld, in game aankopen");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("18", "geweld, grof taalgebruik");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("16", "geweld, angst");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("12", "-");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("7", "in game aankopen");
+insert into leeftijd_categorie (leeftijd_categorie, waarschuwing) values ("18", "geweld");
 
 
