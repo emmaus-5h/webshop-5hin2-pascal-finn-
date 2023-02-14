@@ -36,6 +36,15 @@ CREATE TABLE leeftijd_categorie (
   waarschuwing VARCHAR(255)
 );
 
+CREATE TABLE products_platform (
+  id_products (),
+  id_platform ()
+);
+
+CREATE TABLE products_genre (
+  id_products (),
+  id_genre ()
+);
 --
 -- populate with data
 --
