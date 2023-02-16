@@ -43,13 +43,15 @@ CREATE TABLE leeftijd_categorie (
 );
 
 CREATE TABLE products_platform (
-  id_products (),
-  id_platform ()
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_products INTEGER,
+  id_platform INTEGER
 );
 
 CREATE TABLE products_genre (
-  id_products (),
-  id_genre ()
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_products INTEGER,
+  id_genre INTEGER
 );
 --
 -- populate with data
