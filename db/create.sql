@@ -28,7 +28,7 @@ CREATE TABLE genre_game (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   game_id INTEGER,
   genre_id INTEGER
-)
+);
 
 CREATE TABLE fysiek_digitaal (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -93,46 +93,46 @@ insert into platform (Windows, Linux, MacOS, PS4, XBOX) values ('Windows, ... us
 --
 -- table genre
 --
-insert into genre ("Base Building");
-insert into genre ("Sandbox");
-insert into genre ("FPS");
-insert into genre ("Fighting");
-insert into genre ("Action");
-insert into genre ("Racing");
-insert into genre ("Platformer");
-insert into genre ("Stealth");
+insert into genre (naam_genre) values ("Base Building");
+insert into genre (naam_genre) values ("Sandbox");
+insert into genre (naam_genre) values ("FPS");
+insert into genre (naam_genre) values ("Fighting");
+insert into genre (naam_genre) values ("Action");
+insert into genre (naam_genre) values ("Racing");
+insert into genre (naam_genre) values ("Platformer");
+insert into genre (naam_genre) values ("Stealth");
 
 --
 -- join game genre table
 --
-insert into genre_game (1, 1);
-insert into genre_game (1, 3);
+insert into genre_game (game_id, genre_id) values (1, 1);
+insert into genre_game (game_id, genre_id) values (1, 3);
 
-insert into genre_game (2, 1);
-insert into genre_game (2, 2);
+insert into genre_game (game_id, genre_id) values (2, 1);
+insert into genre_game (game_id, genre_id) values (2, 2);
 
-insert into genre_game (3, 3);
-insert into genre_game (3, 5);
+insert into genre_game (game_id, genre_id) values (3, 3);
+insert into genre_game (game_id, genre_id) values (3, 5);
 
-insert into genre_game (4, 1);
+insert into genre_game (game_id, genre_id) values (4, 1);
 
-insert into genre_game (5, 4);
-insert into genre_game (5, 5);
+insert into genre_game (game_id, genre_id) values (5, 4);
+insert into genre_game (game_id, genre_id) values (5, 5);
 
-insert into genre_game (6, 5);
-insert into genre_game (6, 8);
+insert into genre_game (game_id, genre_id) values (6, 5);
+insert into genre_game (game_id, genre_id) values (6, 8);
 
-insert into genre_game (7, 5);
-insert into genre_game (7, 7);
+insert into genre_game (game_id, genre_id) values (7, 5);
+insert into genre_game (game_id, genre_id) values (7, 7);
 
-insert into genre_game (8, 5);
-insert into genre_game (8, 7);
+insert into genre_game (game_id, genre_id) values (8, 5);
+insert into genre_game (game_id, genre_id) values (8, 7);
 
-insert into genre_game (9, 5);
+insert into genre_game (game_id, genre_id) values (9, 5);
 insert into genre_game (9, 6);
 
-insert into genre_game (10, 5);
-insert into genre_game (10, 3);
+insert into genre_game (game_id, genre_id) values (10, 5);
+insert into genre_game (game_id, genre_id) values (10, 3);
 
 
 --

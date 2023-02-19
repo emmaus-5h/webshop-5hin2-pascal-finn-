@@ -74,6 +74,7 @@ function getProducts(request, response) {
   console.log('API verstuurt /api/products/')
 }
 
+
 function getProductById(request, response) {
   console.log('API ontvangt /api/products/:id', request.query)
   let data = []
@@ -82,6 +83,19 @@ function getProductById(request, response) {
   data = sqlOpdracht.all(product_id)
   response.status(200).json(data[0])
 }
+
+//test code
+/* 
+function getProducts(request, response) {
+  console.log('API ontvangt /api/products/', request.query)
+  let data = []
+  const sqlOpdracht = db.prepare('SELECT products.name, genre.naam_genre FROM genre JOIN products ON genre.id = products.id')
+  data = sqlOpdracht.all()
+  // console.log(JSON.stringify(data, null, 2))
+  response.status(200).send(data)
+  console.log('API verstuurt /api/products/')
+}
+*/
 
 /*
 const getRelatedProductsById = (request, response) => {
